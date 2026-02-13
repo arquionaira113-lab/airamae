@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Laboratory Activity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic styling to make the page look neat */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #5D4037; /* Dark Brown background outside the border */
+            text-align: center;        /* Centers text and inline elements throughout the page */
+        }
+
+        /* Container to add a border line around the entire main content */
+        .main-container {
+            border: 5px double #333;
+            background-color: #D2B48C; /* Light Brown (Tan) background inside the border */
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Adds depth to the container */
+        }
+
+        /* Styling for all Titles (h1 and h2) */
+        h1, h2 {
+            border: 3px solid #333;    /* Adds the border to all titles */
+            padding: 10px 20px;        /* Adds space inside the border */
+            border-radius: 10px;       /* Rounds the corners slightly */
+            width: fit-content;        /* Makes border wrap the text only */
+            margin: 20px auto;         /* Centers the title blocks on the page */
+            background-color: #fff;    /* White background to make titles pop */
+        }
+
+        /* Specific size for the main title */
+        h1 {
+            font-size: 2em;
+            border-width: 4px;         /* Slightly thicker border for the main title */
+        }
+
+        /* Added a border box for the list sections */
+        .list-section {
+            border: 2px dashed #5D4037;
+            padding: 15px;
+            margin: 20px auto;
+            width: fit-content;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        /* Center list items and remove default padding */
+        ul, ol {
+            display: inline-block;     /* Allows the list to be centered by the body's text-align */
+            text-align: left;          /* Keeps list text left-aligned inside the centered block */
+            margin: 0;
+        }
+
+        /* Table Styling and Alignment */
+        table {
+            width: 80%;            /* Table takes up 80% of width */
+            margin: 20px auto;     /* Centers the table itself on the page */
+            border-collapse: collapse; /* Makes single lines for borders */
+            background-color: #fff;    /* White background for the table to keep it readable */
+            border: 2px solid #333;    /* Outer table border */
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 12px;         /* Adds space inside cells */
+        }
+
+        th {
+            background-color: #f2f2f2; /* Light grey background for headers */
+            font-weight: bold;
+        }
+        
+        img {
+            display: block;        /* Necessary for margin auto to work */
+            margin: 10px auto;     /* Centers the image */
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;    /* Optional: slightly rounded image corners */
+            border: 4px solid #fff; /* White frame-like border for the image */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow to make it pop */
+        }
+
+        /* Link styling */
+        a {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #5D4037;        /* Darker brown for the link text */
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 1px solid #5D4037; /* Border for the link */
+            text-decoration: none;
+            border-radius: 5px;
+            background-color: #fff;    /* Added white background to link for visibility */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <!--This is my HTML Laboratory activity-->
+
+        <h1>Welcome to My HTML Page</h1>
+
+        <p>This webpage is created as part of my HTML Laboratory tasks.</p>
+
+        <div class="list-section">
+            <h2>My Favorite Songs</h2>
+            <ul>
+                <li>Panindigan</li>
+                <li>Leaves</li>
+                <li>Make it with you</li>
+            </ul>
+        </div>
+
+        <div class="list-section">
+            <h2>My Favorite Hobbies</h2>
+            <ol>
+                <li>Listening Music</li>
+                <li>Dancing</li>
+                <li>Watching Tiktok</li>
+            </ol>
+        </div>
+
+        <h2>External Link</h2>
+        <a href="https://www.google.com" target="_blank">Visit Google</a>
+
+        <h2>Ben & Ben Image</h2>
+        <img src="airaa.jpg" alt="Ben & Ben Image" width="300" onerror="this.src='https://placehold.co/300x300?text=Ben+%26+Ben+Image'">
+
+        <h2>Student Information</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Year Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aira Mae Limsan Arquion</td>
+                    <td>BSIT</td>
+                    <td>3rd Year</td>
+                </tr>
+                <tr>
+                    <td>Ryle Fritz Acero</td>
+                    <td>BSIT</td>
+                    <td>3rd Year</td>
+                </tr>
+                <tr>
+                    <td>Zaira Tulang</td>
+                    <td>BSIT</td>
+                    <td>3rd Year</td>
+                </tr>
+                <tr>
+                    <td>Angel Navales</td>
+                    <td>BSIT</td>
+                    <td>3rd Year</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
